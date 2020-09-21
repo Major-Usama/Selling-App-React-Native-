@@ -27,8 +27,8 @@ const styles = StyleSheet.create({
         alignItems:'center',
         width:wp('90%'),
         borderRadius:25,
-        padding:wp('4%'),
-        marginVertical:wp('2%')
+        padding:'4%',
+        marginVertical:'2%'
 
 
     },

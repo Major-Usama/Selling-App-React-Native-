@@ -23,37 +23,22 @@ import AccountScreen from './app/screens/AccountScreen';
 import ListingsScreen from './app/screens/ListingsScreen';
 import AppTextInput from './app/components/AppTextInput';
 import AppPicker from './app/components/AppPicker';
+import { set } from 'react-native-reanimated';
+import LoginScreen from './app/screens/LoginScreen';
+import ListingEditScreen from './app/screens/ListingEditScreen';
 
 
-const categories=[
 
-{
-  label:"Furniture",value:1
-},
-
-{
-  label:"CLothing",value:2
-
-},
-
-{
-  label:"Cameras",value:3
-
-},
-
-]
 
 export default function App() {
 
-  const[isNew,setisNew]=useState(false);
+  
   
   return (
 
      <Screen style={styles.container}>
        
-       <AppPicker  placeholder="Category" icon='apps' items={categories}/>
-       <AppTextInput  placeholder="Email" icon='email'/>
-       
+      <ListingEditScreen />
   
 
        
@@ -69,6 +54,7 @@ const styles = StyleSheet.create({
   {
 
     backgroundColor: '#fff',
+    padding:10,
     
 
 

@@ -14,7 +14,7 @@ const listings =[
     id:1,
     title:'Red Jacket for sale',
     price:100,
-    image:require('../assets/Jacket.jpg')
+    image:require('../assets/jacket.jpg')
 },
 
 {
