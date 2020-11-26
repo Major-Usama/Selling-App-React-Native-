@@ -1,6 +1,6 @@
-import { StatusBar } from 'expo-status-bar';
-import React, {useState} from 'react';
-import { StyleSheet, Text, View, ImageBackground, SafeAreaView, Image, TextInput, Switch, Button } from 'react-native';
+
+import React, {useState,useEffect} from 'react';
+import { StyleSheet, Text, View,StatusBar, ImageBackground, SafeAreaView, Image, TextInput, Switch, Button } from 'react-native';
 import WelcomeScreen from './app/screens/WelcomeScreen';
 import ViewImageScreen from './app/screens/ViewImageScreen';
 import { Entypo } from '@expo/vector-icons';
@@ -26,23 +26,23 @@ import AppPicker from './app/components/AppPicker';
 import { set } from 'react-native-reanimated';
 import LoginScreen from './app/screens/LoginScreen';
 import ListingEditScreen from './app/screens/ListingEditScreen';
+import { ScrollView, TouchableWithoutFeedback } from 'react-native-gesture-handler';
+
+import * as ImagePicker from 'expo-image-picker'
+import { FontAwesome } from '@expo/vector-icons'
+import ImageInput from './app/components/ImageInput';
+import ImageInputList from './app/components/ImageInputList';
 
 
 
 
 export default function App() {
-
-  
-  
+     
   return (
 
-     <Screen style={styles.container}>
-       
-      <ListingEditScreen />
-  
-
-       
-     </Screen>
+    <View style={{padding:10}}>
+   <ListingEditScreen />
+   </View>
 
 
   );
@@ -50,17 +50,6 @@ export default function App() {
 
 const styles = StyleSheet.create({
 
-  container:
-  {
-
-    backgroundColor: '#fff',
-    padding:10,
-    
-
-
-
-
-  },
 
 
 });

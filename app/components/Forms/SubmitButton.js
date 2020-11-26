@@ -9,11 +9,13 @@ export default function SubmitButton({title}) {
 
     const {handleSubmit}=useFormikContext()
     return (
+        <View style={{alignSelf:'center'}}>
         <AppButton
             
          title={title}
             onPress={handleSubmit}
             />
+            </View>
     )
 }
 
